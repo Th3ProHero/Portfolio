@@ -1,0 +1,86 @@
+.acerca-section {
+  background: linear-gradient(180deg, transparent, rgba(0, 255, 65, 0.02) 50%, transparent);
+}
+
+.acerca-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.acerca-text h3 {
+  color: var(--matrix-green);
+  font-family: var(--font-mono);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.acerca-text p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.skills-list {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  padding: 8px 15px;
+  background: rgba(0, 255, 65, 0.05);
+  border: 1px solid var(--matrix-green-glow);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border-radius: 20px;
+  transition: all var(--transition-speed) ease;
+}
+
+.skills-list li:hover {
+  background: rgba(0, 255, 65, 0.2);
+  border-color: var(--matrix-green);
+  box-shadow: 0 0 10px var(--matrix-green-glow);
+  transform: translateY(-2px);
+}
+
+.acerca-visual {
+  height: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--matrix-green-glow);
+  background: rgba(5, 5, 5, 0.5);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+}
+
+.binary-bg {
+  color: var(--matrix-green-dark);
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  opacity: 0.6;
+  word-break: break-all;
+  padding: 20px;
+  text-align: center;
+  animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  100% { opacity: 0.8; }
+}
+
+@media (max-width: 900px) {
+  .acerca-content {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
