@@ -117,7 +117,7 @@ const MusicPlayer = () => {
 
       <div className="controls">
         <button className="control-btn" onClick={handlePlayPause}>
-          {isPlaying ? '⏸' : '▶'}
+          {isPlaying ? '။' : '▶'}
         </button>
         <button className="control-btn" onClick={handleNext}>
           ⏭
